@@ -1,46 +1,24 @@
 operation = input ("Choose your operation")
+     
 x = input ("What is your first number?")
-# number = int(number)
 y = input ("What is your second number?")
-
 
 def add(x,y):
     answer = (int(x)+int(y))
     return (answer)
 
-print ("Your total is " + str(add(x,y)))
-
-
-
-# if operation == "addition":
-#     print ("What is your first")
+def sub(x,y):
+    answer = (int(x)-int(y))
+    return (answer)
     
-
     
-
-
-
-
-
-# def add(x,y):
-#     answer = (x+y)
-#     val = input("Enter your value: ")
-#     elif:
-#         print ("What do you want to do?")
-#     return "Your total is " + str(answer)
+if operation == "addition" or operation == "add":
+    message = "Your sum is " + str(add(x,y))
     
-# print (add(3,2))
+elif operation == "subtraction" or operation == "subtract":
+    message = "Your difference is " + str(sub(x,y))
+else:
+    message = "Invalid input"
 
-#     elif:
-#         print ("What do you want to do?")
-
-
-# print "Your total is" + (add(3,2))
-    #return("The total is " + (x+y))
-
-
- 
-
-
-
+print (message)
 
